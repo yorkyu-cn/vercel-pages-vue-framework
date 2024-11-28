@@ -1,0 +1,13 @@
+{
+    "headers": [
+      {
+        "source": "/headers-placeholders/:id",
+        "headers": [
+          {
+            "key": "x-pages-placeholders-msg",
+            "value": ":id"
+          }
+        ]
+      }
+    ]
+}
