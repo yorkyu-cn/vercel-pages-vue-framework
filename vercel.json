@@ -47,6 +47,9 @@
             "source": "/redirect/dynamic-placeholder/:id",
             "destination": "/redirect/dynamic-placeholder-2/:id",
             "statusCode": 302
+        },
+        {
+            "source": "/redirect/xxxxx"
         }
     ]
 }
