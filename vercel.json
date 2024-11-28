@@ -10,6 +10,15 @@
             ]
         },
         {
+            "source": "/headers/.*.jpeg",
+            "headers": [
+                {
+                    "key": "x-pages-placeholders-msg-2",
+                    "value": "image jpeg"
+                }
+            ]
+        },
+        {
             "source": "/headers-placeholders/:id",
             "headers": [
                 {
