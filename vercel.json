@@ -36,5 +36,17 @@
                 }
             ]
         }
+    ],
+    "redirects": [
+        {
+            "source": "/redirect/dynamic/(.*)",
+            "destination": "/redirect/dynamic-2/$1",
+            "statusCode": 302
+        },
+        {
+            "source": "/redirect/dynamic-placeholder/:id",
+            "destination": "/redirect/dynamic-placeholder/:id",
+            "statusCode": 302
+        }
     ]
 }
