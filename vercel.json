@@ -1,7 +1,7 @@
 {
     "headers": [
         {
-            "source": "/headers/*",
+            "source": "/headers/.*",
             "headers": [
                 {
                     "key": "x-pages-placeholders-msg",
