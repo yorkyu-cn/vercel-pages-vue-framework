@@ -10,7 +10,7 @@
             ]
         },
         {
-            "source": "/headers/.*\\.jpeg",
+            "source": "/headers/(.*).jpeg",
             "headers": [
                 {
                     "key": "x-pages-placeholders-msg-2",
