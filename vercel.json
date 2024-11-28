@@ -1,13 +1,31 @@
 {
     "headers": [
-      {
-        "source": "/headers-placeholders/:id",
-        "headers": [
-          {
-            "key": "x-pages-placeholders-msg",
-            "value": ":id"
-          }
-        ]
-      }
+        {
+            "source": "/headers/*",
+            "headers": [
+                {
+                    "key": "x-pages-placeholders-msg",
+                    "value": ":splat"
+                }
+            ]
+        },
+        {
+            "source": "/headers-placeholders/:id",
+            "headers": [
+                {
+                    "key": "x-pages-placeholders-msg",
+                    "value": ":id"
+                }
+            ]
+        },
+        {
+            "source": "/headers-error-1",
+            "headers": [
+                {
+                    "key": "中文",
+                    "name": "demo_key"
+                }
+            ]
+        }
     ]
 }
