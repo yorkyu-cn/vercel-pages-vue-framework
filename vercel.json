@@ -5,7 +5,7 @@
             "headers": [
                 {
                     "key": "x-pages-placeholders-msg",
-                    "value": ":$1"
+                    "value": "$1"
                 }
             ]
         },
