@@ -45,7 +45,7 @@
         },
         {
             "source": "/redirect/dynamic-placeholder/:id",
-            "destination": "/redirect/dynamic-placeholder/:id",
+            "destination": "/redirect/dynamic-placeholder-2/:id",
             "statusCode": 302
         }
     ]
