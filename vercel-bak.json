@@ -1,0 +1,55 @@
+{
+    "headers": [
+        {
+            "source": "/headers/(.*)",
+            "headers": [
+                {
+                    "key": "x-pages-placeholders-msg",
+                    "value": "$1"
+                }
+            ]
+        },
+        {
+            "source": "/headers/(.*).jpeg",
+            "headers": [
+                {
+                    "key": "x-pages-placeholders-msg-2",
+                    "value": "image jpeg"
+                }
+            ]
+        },
+        {
+            "source": "/headers-placeholders/:id",
+            "headers": [
+                {
+                    "key": "x-pages-placeholders-msg",
+                    "value": ":id"
+                }
+            ]
+        },
+        {
+            "source": "/headers-error-1",
+            "headers": [
+                {
+                    "key": "中文",
+                    "value": "error"
+                }
+            ]
+        }
+    ],
+    "redirects": [
+        {
+            "source": "/redirect/dynamic/(.*)",
+            "destination": "/redirect/dynamic-2/$1",
+            "statusCode": 302
+        },
+        {
+            "source": "/redirect/dynamic-placeholder/:id",
+            "destination": "/redirect/dynamic-placeholder-2/:id",
+            "statusCode": 302
+        },
+        {
+            "source": "/redirect/xxxxx"
+        }
+    ]
+}
