@@ -4,8 +4,7 @@
             "source": "/headers-error-1",
             "headers": [
                 {
-                    "key": "中文",
-                    "value": "error"
+                    "key": "x-s"
                 }
             ]
         }
