@@ -10,6 +10,15 @@
             ]
         },
         {
+            "source": "/headers-1/(.*).jpeg",
+            "headers": [
+                {
+                    "key": "x-pages-msg",
+                    "value": "/headers-1, $1"
+                }
+            ]
+        },
+        {
             "source": "/headers-2/(.*)",
             "headers": [
                 {
