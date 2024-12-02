@@ -1,15 +1,34 @@
 {
     "headers": [
         {
-            "source": "/headers-error-1",
+            "source": "/headers",
             "headers": [
                 {
-                    "key": "x-s"
+                    "key": "x-pages-msg",
+                    "value": "/headers"
+                }
+            ]
+        },
+        {
+            "source": "/headers-2/(.*)",
+            "headers": [
+                {
+                    "key": "x-pages-msg",
+                    "value": "/headers-2$1"
                 }
             ]
         }
     ],
     "redirects": [
-        
+        {
+            "source": "/redirect/dynamic/(.*)",
+            "destination": "/redirect/dynamic-2/$1",
+            "statusCode": 302
+        },
+        {
+            "source": "/redirect/dynamic-placeholder/:id",
+            "destination": "/redirect/dynamic-placeholder-2/:id",
+            "statusCode": 302
+        }
     ]
 }
