@@ -17,6 +17,24 @@
                     "value": "/headers-2$1"
                 }
             ]
+        },
+        {
+            "source": "/headers-3/:id",
+            "headers": [
+                {
+                    "key": "x-pages-msg",
+                    "value": "/headers-3 :id"
+                }
+            ]
+        },
+        {
+            "source": "/headers-4/:id/:name",
+            "headers": [
+                {
+                    "key": "x-pages-msg",
+                    "value": "/headers-4 :id :name"
+                }
+            ]
         }
     ],
     "redirects": [
