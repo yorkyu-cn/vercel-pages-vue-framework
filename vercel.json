@@ -71,7 +71,7 @@
             "statusCode": 302
         },
         {
-            "source": "/redirect-a/*.jpeg",
+            "source": "/redirect-a/(.*).jpeg",
             "destination": "/redirect-a2/:splat.png",
             "statusCode": 301
         }    
