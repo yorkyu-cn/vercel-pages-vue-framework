@@ -10,6 +10,15 @@
             ]
         },
         {
+            "source": "/%E6%A0%87%E5%A4%B4(.*)",
+            "headers": [
+                {
+                    "key": "x-pages-msg",
+                    "value": "/%E6%A0%87%E5%A4%B4, $1"
+                }
+            ]
+        },
+        {
             "source": "/headers-1/(.*).jpeg",
             "headers": [
                 {
@@ -79,19 +88,19 @@
     "rewrites": [
         {
             "source": "/rewrites",
-            "destination": "/_next/static/chunks/main-app-32386e6b547fb5d8.js"
+            "destination": "/js/app.25c5c29c.js"
         },
         {
             "source": "/rewrites-1/(.*)",
-            "destination": "/_next/static/chunks/main-app-$1.js"
+            "destination": "/js/app.$1.js"
         },
         {
             "source": "/rewrites-2/:id",
-            "destination": "/_next/static/chunks/main-app-:id.js"
+            "destination": "/js/app.:id.js"
         },
         {
             "source": "/rewrites-3/(.*)/hello/:id",
-            "destination": "/_next/static/chunks/$1-:id.js"
+            "destination": "/js/$1.:id.js"
         }
     ]
 }
