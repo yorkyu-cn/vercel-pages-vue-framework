@@ -19,6 +19,24 @@
             ]
         },
         {
+            "source": "/headers-a/(.*)/name/(.*)",
+            "headers": [
+                {
+                    "key": "x-pages-msg",
+                    "value": "/headers-a, $1 $2"
+                }
+            ]
+        },
+        {
+            "source": "/headers-b/(.*)/id/:id",
+            "headers": [
+                {
+                    "key": "x-pages-msg",
+                    "value": "/headers-b, $1 :id"
+                }
+            ]
+        },
+        {
             "source": "/headers-2/(.*)",
             "headers": [
                 {
@@ -48,14 +66,14 @@
     ],
     "redirects": [
         {
-            "source": "/redirect/dynamic/(.*)",
-            "destination": "/redirect/dynamic-2/$1",
+            "source": "/redirect/*",
+            "destination": "/redirect-1/:splat",
             "statusCode": 302
         },
         {
-            "source": "/redirect/dynamic-placeholder/:id",
-            "destination": "/redirect/dynamic-placeholder-2/:id",
-            "statusCode": 302
-        }
+            "source": "/redirect-a/*.jpeg",
+            "destination": "/redirect-a2/:splat.png",
+            "statusCode": 301
+        }    
     ]
 }
