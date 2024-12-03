@@ -67,12 +67,12 @@
     "redirects": [
         {
             "source": "/redirect/(.*)",
-            "destination": "/redirect-1/:splat",
+            "destination": "/redirect-1/$1",
             "statusCode": 302
         },
         {
             "source": "/redirect-a/(.*).jpeg",
-            "destination": "/redirect-a2/:splat.png",
+            "destination": "/redirect-a2/$1.png",
             "statusCode": 301
         }    
     ]
