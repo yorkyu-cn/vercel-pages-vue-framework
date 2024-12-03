@@ -77,9 +77,21 @@
         }    
     ],
     "rewrites": [
-        { "source": "/rewrites", "destination": "/js/app.25c5c29c.js" },
-        { "source": "/rewrites-1/(.*)", "destination": "/js/app.$1.js" },
-        { "source": "/rewrites-2/:id", "destination": "/js/app.:id.js" },
-        { "source": "/rewrites-3/(.*)/hello/:id", "destination": "/js/$1.:id.js" }
+        {
+            "source": "/rewrites",
+            "destination": "/_next/static/chunks/main-app-32386e6b547fb5d8.js"
+        },
+        {
+            "source": "/rewrites-1/(.*)",
+            "destination": "/_next/static/chunks/main-app-$1.js"
+        },
+        {
+            "source": "/rewrites-2/:id",
+            "destination": "/_next/static/chunks/main-app-:id.js"
+        },
+        {
+            "source": "/rewrites-3/(.*)/hello/:id",
+            "destination": "/_next/static/chunks/$1-:id.js"
+        }
     ]
 }
