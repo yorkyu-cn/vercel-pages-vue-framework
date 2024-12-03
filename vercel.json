@@ -75,5 +75,11 @@
             "destination": "/redirect-a2/$1.png",
             "statusCode": 301
         }    
+    ],
+    "rewrites": [
+        { "source": "/rewrites", "destination": "/js/app.25c5c29c.js" },
+        { "source": "/rewrites-1/(.*)", "destination": "/js/app.$1.js" },
+        { "source": "/rewrites-2/:id", "destination": "/js/app.:id.js" },
+        { "source": "/rewrites-3/(.*)/hello/:id", "destination": "/js/$1.:id.js" }
     ]
 }
