@@ -55,7 +55,7 @@
             ]
         },
         {
-            "source": "/headers-c/*/list/a-:id",
+            "source": "/headers-c/*/list/:id",
             "headers": [
                 {
                     "key": "x-pages-msg",
