@@ -10,7 +10,7 @@
             ]
         },
         {
-            "source": "/h-*",
+            "source": "/h-(.*)",
             "headers": [
                 {
                     "key": "x-pages-msg",
