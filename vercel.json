@@ -1,6 +1,24 @@
 {
     "headers": [
         {
+            "source": "/(.*).html",
+            "headers": [
+                {
+                    "key": "Cache-Control",
+                    "value": "max-age=7200"
+                }
+            ]
+        },
+        {
+            "source": "/cache-control(.*)",
+            "headers": [
+                {
+                    "key": "Cache-Control",
+                    "value": "max-age=7201"
+                }
+            ]
+        },
+        {
             "source": "/headers",
             "headers": [
                 {
